@@ -1,0 +1,247 @@
+gnome-terminal
+-------------------------------------------
+This is the GNOME terminal emulator application.  gnome-terminal is
+only the shell (menubar, prefs dialog); the terminal emulation ("stuff
+in the middle") comes from the VTE widget.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  GConf2-2.14.0-2
+  ORBit2-2.14.0-1
+  atk-1.10.3-1
+  gtk2-x11-2.8.17-1
+  libX11_6-1.0.0-2
+  libXrender1-0.9.0.2-1
+  libbonobo2-2.14.0-1
+  libglade2-2.5.1-1
+  libgnome2-2.14.1-1
+  libgnomeui2-2.14.1-1
+  startup-notification-0.8-1
+  vte-0.12.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  intltool-0.35.0-1
+  make-3.80-1
+  pkg-config-0.20-1
+  scrollkeeper-0.3.14-2
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-terminal-2.14.2-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-terminal-2.14.2-1.cygport all
+
+This will create:
+  /usr/src/gnome-terminal-2.14.2-1-src.tar.bz2
+  /usr/src/gnome-terminal-2.14.2-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/gnome-terminal.schemas
+  /etc/postinstall/gnome-terminal.sh
+  /etc/preremove/gnome-terminal.sh
+  /usr/bin/gnome-terminal.exe
+  /usr/lib/bonobo/servers/gnome-terminal.server
+  /usr/share/applications/gnome-terminal.desktop
+  /usr/share/doc/Cygwin/gnome-terminal-2.14.2.README
+  /usr/share/doc/gnome-terminal-2.14.2/AUTHORS
+  /usr/share/doc/gnome-terminal-2.14.2/COPYING
+  /usr/share/doc/gnome-terminal-2.14.2/ChangeLog
+  /usr/share/doc/gnome-terminal-2.14.2/HACKING
+  /usr/share/doc/gnome-terminal-2.14.2/INSTALL
+  /usr/share/doc/gnome-terminal-2.14.2/NEWS
+  /usr/share/doc/gnome-terminal-2.14.2/README
+  /usr/share/gnome-terminal/glade/gnome-terminal.glade2
+  /usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/C/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/C/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/C/legal.xml
+  /usr/share/gnome/help/gnome-terminal/bg/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/bg/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/bg/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/bg/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/bg/legal.xml
+  /usr/share/gnome/help/gnome-terminal/de/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/de/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/de/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/de/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/de/legal.xml
+  /usr/share/gnome/help/gnome-terminal/es/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/es/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/es/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/es/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/es/legal.xml
+  /usr/share/gnome/help/gnome-terminal/fr/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/fr/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/fr/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/fr/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/fr/legal.xml
+  /usr/share/gnome/help/gnome-terminal/it/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/it/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/it/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/it/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/it/legal.xml
+  /usr/share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/ja/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/ja/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/ja/legal.xml
+  /usr/share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/ko/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/ko/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/ko/legal.xml
+  /usr/share/gnome/help/gnome-terminal/ro/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/ro/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/ro/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/ro/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/ro/legal.xml
+  /usr/share/gnome/help/gnome-terminal/sv/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/sv/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/sv/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/sv/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/sv/legal.xml
+  /usr/share/gnome/help/gnome-terminal/uk/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/uk/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/uk/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/uk/legal.xml
+  /usr/share/gnome/help/gnome-terminal/zh_CN/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/zh_CN/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/zh_CN/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/zh_CN/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/zh_CN/legal.xml
+  /usr/share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/zh_TW/figures/terminal_window.png
+  /usr/share/gnome/help/gnome-terminal/zh_TW/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/zh_TW/legal.xml
+  /usr/share/locale/am/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ar/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/az/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/be/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/bg/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/bn/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/br/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/bs/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ca/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/cs/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/cy/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/da/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/de/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/dz/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/el/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/es/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/et/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/fa/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/fi/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ga/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/gl/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/gu/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/he/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/hi/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/hr/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/hu/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/hy/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/id/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/it/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ja/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ko/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ku/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/lt/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/lv/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/mk/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ml/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/mn/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ms/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/nb/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ne/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/nl/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/nn/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/no/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/pa/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/pt/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ro/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ru/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/rw/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sk/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sl/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sq/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sr/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ta/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/th/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/tr/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/uk/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/vi/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/wa/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/xh/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/omf/gnome-terminal/gnome-terminal-C.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-bg.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-de.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-es.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-fr.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-it.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-ja.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-ko.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-ro.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-sv.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-uk.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-zh_CN.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-zh_TW.omf
+  /usr/share/pixmaps/gnome-terminal.png
+
+--------------------
+
+Port Notes:
+
+----- version 2.14.2-1 -----
+Version bump.
+
+----- version 2.14.1-1 -----
+Version bump for GNOME 2.14.
+
+----- version 2.12.0-1 -----
+Version bump for GNOME 2.12.
+
+----- version 2.10.0-1 -----
+Version bump for GNOME 2.10.
+
+----- version 2.8.2-1 -----
+Version bump.
+
+----- version 2.8.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
