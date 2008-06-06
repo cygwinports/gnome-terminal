@@ -1,5 +1,5 @@
 category: Gnome Shells
-requires: cygwin GConf2 ORBit2 atk glib2 gnome-vfs2 gtk2-x11 libX11_6 libXrender1 libbonobo2 libglade2 libgnome2 libgnomeui2 libintl8 libpopt0 pango startup-notification vte
+requires: cygwin GConf2 ORBit2 atk glib2 gtk2-x11 libX11_6 libXrender1 libbonobo2 libglade2 libgnome2 libgnomeui2 libintl8 pango startup-notification vte
 sdesc: "GNOME terminal emulator"
 ldesc: "This is the GNOME terminal emulator application.  
 gnome-terminal is only the shell (menubar, prefs dialog); the terminal 
