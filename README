@@ -6,36 +6,34 @@ in the middle") comes from the VTE widget.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  atk-1.22.0-1
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.10-1
-  glib2-2.16.3-1
-  gtk2-x11-2.12.10-1
-  libbonobo2-2.22.0-1
-  libglade2-2.6.2-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libintl8-0.15-1
-  libX11_6-1.1.3-1
-  libXrender1-0.9.4-1
-  ORBit2-2.14.12-1
-  pango-1.20.3-1
-  startup-notification-0.9-1
-  vte-0.16.13-1
+  libatk1.0_0-1.24.0-1
+  libbonobo2_0-2.24.0-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libORBit2_0-2.14.16-1
+  libpango1.0_0-1.22.3-1
+  libstartup-notification1_0-0.9-2
+  libvte9-0.17.4-1
+  libX11_6-1.1.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  intltool-0.37.1-1
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
   make-3.81-1
   pkg-config-0.23a-2
-  rarian-0.8.0-1
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -47,15 +45,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-terminal-2.22.3-1-src.tar.bz2
+  unpack gnome-terminal-2.24.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-terminal-2.22.3-1.cygport all
+  cygport ./gnome-terminal-2.24.2-1.cygport all
 
 This will create:
-  /usr/src/gnome-terminal-2.22.3-1-src.tar.bz2
-  /usr/src/gnome-terminal-2.22.3-1.tar.bz2
+  /usr/src/gnome-terminal-2.24.2-1-src.tar.bz2
+  /usr/src/gnome-terminal-2.24.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -67,13 +65,19 @@ Files included in the binary package:
   /usr/bin/gnome-terminal.exe
   /usr/lib/bonobo/servers/gnome-terminal.server
   /usr/share/applications/gnome-terminal.desktop
-  /usr/share/doc/gnome-terminal-2.22.3/AUTHORS
-  /usr/share/doc/gnome-terminal-2.22.3/COPYING
-  /usr/share/doc/gnome-terminal-2.22.3/ChangeLog
-  /usr/share/doc/gnome-terminal-2.22.3/HACKING
-  /usr/share/doc/gnome-terminal-2.22.3/NEWS
-  /usr/share/doc/gnome-terminal-2.22.3/README
-  /usr/share/gnome-terminal/glade/gnome-terminal.glade2
+  /usr/share/doc/gnome-terminal-2.24.2/AUTHORS
+  /usr/share/doc/gnome-terminal-2.24.2/COPYING
+  /usr/share/doc/gnome-terminal-2.24.2/ChangeLog
+  /usr/share/doc/gnome-terminal-2.24.2/HACKING
+  /usr/share/doc/gnome-terminal-2.24.2/NEWS
+  /usr/share/doc/gnome-terminal-2.24.2/README
+  /usr/share/gnome-terminal/encodings-dialog.ui
+  /usr/share/gnome-terminal/keybinding-editor.ui
+  /usr/share/gnome-terminal/profile-manager.ui
+  /usr/share/gnome-terminal/profile-new-dialog.ui
+  /usr/share/gnome-terminal/profile-preferences.ui
+  /usr/share/gnome-terminal/skey-challenge.ui
+  /usr/share/gnome-terminal/terminal.xml
   /usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-default.png
   /usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-tabbed.png
   /usr/share/gnome/help/gnome-terminal/C/gnome-terminal.xml
@@ -85,6 +89,9 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-terminal/ca/figures/gnome-terminal-default.png
   /usr/share/gnome/help/gnome-terminal/ca/figures/gnome-terminal-tabbed.png
   /usr/share/gnome/help/gnome-terminal/ca/gnome-terminal.xml
+  /usr/share/gnome/help/gnome-terminal/cs/figures/gnome-terminal-default.png
+  /usr/share/gnome/help/gnome-terminal/cs/figures/gnome-terminal-tabbed.png
+  /usr/share/gnome/help/gnome-terminal/cs/gnome-terminal.xml
   /usr/share/gnome/help/gnome-terminal/de/figures/gnome-terminal-default.png
   /usr/share/gnome/help/gnome-terminal/de/figures/gnome-terminal-tabbed.png
   /usr/share/gnome/help/gnome-terminal/de/gnome-terminal.xml
@@ -169,10 +176,12 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/kn/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ko/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/lt/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/lv/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/mai/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/mg/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/mk/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ml/LC_MESSAGES/gnome-terminal.mo
@@ -187,6 +196,7 @@ Files included in the binary package:
   /usr/share/locale/or/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/ps/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/pt/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ro/LC_MESSAGES/gnome-terminal.mo
@@ -197,7 +207,7 @@ Files included in the binary package:
   /usr/share/locale/sl/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/sq/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/sr/LC_MESSAGES/gnome-terminal.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-terminal.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/sv/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/ta/LC_MESSAGES/gnome-terminal.mo
   /usr/share/locale/te/LC_MESSAGES/gnome-terminal.mo
@@ -213,6 +223,7 @@ Files included in the binary package:
   /usr/share/omf/gnome-terminal/gnome-terminal-C.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-bg.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-ca.omf
+  /usr/share/omf/gnome-terminal/gnome-terminal-cs.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-de.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-es.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-fr.omf
@@ -227,11 +238,13 @@ Files included in the binary package:
   /usr/share/omf/gnome-terminal/gnome-terminal-uk.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-zh_CN.omf
   /usr/share/omf/gnome-terminal/gnome-terminal-zh_TW.omf
-  /usr/share/pixmaps/gnome-terminal.png
 
 --------------------
 
 Port Notes:
+
+----- version 2.24.2-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.3-1 -----
 Version bump.
