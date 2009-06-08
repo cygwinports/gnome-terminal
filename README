@@ -5,31 +5,31 @@ only the shell (menubar, prefs dialog); the terminal emulation ("stuff
 in the middle") comes from the VTE widget.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libatk1.0_0-1.26.0-1
   libdbus-glib_1_2-0.80-10
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.1-1
-  libglib2.0_0-2.20.1-1
-  libgtk2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
   libICE6-1.0.5-10
   libintl8-0.17-10
-  libpango1.0_0-1.24.1-1
+  libpango1.0_0-1.24.2-1
   libSM6-1.1.0-10
-  libstartup-notification1_0-0.9-10
-  libvte9-0.20.1-1
+  libstartup-notification1_0-0.10-1
+  libvte10-0.20.4-1
   libX11_6-1.2-10
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   gnome-doc-utils-0.16.0-1
   intltool-0.40.6-1
   make-3.81-2
@@ -46,15 +46,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-terminal-2.26.1-1-src.tar.bz2
+  unpack gnome-terminal-2.26.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-terminal-2.26.1-1.cygport all
+  cygport ./gnome-terminal-2.26.2-1.cygport all
 
 This will create:
-  /usr/src/gnome-terminal-2.26.1-1-src.tar.bz2
-  /usr/src/gnome-terminal-2.26.1-1.tar.bz2
+  /usr/src/gnome-terminal-2.26.2-1-src.tar.bz2
+  /usr/src/gnome-terminal-2.26.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -245,6 +245,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.26.2-1 -----
+Version bump.
 
 ----- version 2.26.1-1 -----
 Version bump.
