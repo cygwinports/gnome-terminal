@@ -18,7 +18,7 @@ Runtime requirements:
   libpango1.0_0-1.24.2-1
   libSM6-1.1.0-10
   libstartup-notification1_0-0.10-1
-  libvte10-0.20.4-1
+  libvte9-0.20.5-1
   libX11_6-1.2-10
 
 Build requirements:
