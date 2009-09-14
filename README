@@ -5,30 +5,31 @@ only the shell (menubar, prefs dialog); the terminal emulation ("stuff
 in the middle") comes from the VTE widget.
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-60
   libatk1.0_0-1.26.0-1
   libdbus-glib_1_2-0.80-10
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
-  libgdk_pixbuf2.0_0-2.16.3-1
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.3-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
   libICE6-1.0.5-10
-  libintl8-0.17-10
-  libpango1.0_0-1.24.3-1
+  libintl8-0.17-11
+  libpango1.0_0-1.24.5-1
   libSM6-1.1.0-10
   libstartup-notification1_0-0.10-1
   libvte9-0.20.5-1
-  libX11_6-1.2.1-1
+  libX11_6-1.2.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
   gcc4-core-4.3.2-2
+  gettext-devel-0.17-11
   gnome-common-2.26.0-2
   gnome-doc-utils-0.16.0-2
   intltool-0.40.6-1
@@ -245,6 +246,10 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.26.3.1-2 -----
+Applied Gentoo patchset, including patch to spawn GConf daemon 
+when necessary instead of failing to launch.
 
 ----- version 2.26.3.1-1 -----
 Version bump.

@@ -1,0 +1,9 @@
+inherit gnome2
+
+DESCRIPTION="GNOME terminal emulator"
+
+PATCH_URI="
+	mirror://portage/x11-terms/${PN}/files/${PN}-2.22.0-default_shell.patch
+	mirror://portage/x11-terms/${PN}/files/${P}-cwd-on-new-tab.patch
+	mirror://portage/x11-terms/${PN}/files/${P}-partial-fix-dbus-error.patch
+"
