@@ -1,0 +1,5 @@
+inherit gnome2
+
+DESCRIPTION="GNOME terminal emulator"
+
+PATCH_URI="mirror://portage/x11-terms/${PN}/files/${PN}-2.22.0-default_shell.patch"
