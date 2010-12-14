@@ -1,5 +1,5 @@
 category: Gnome Shells
-requires: GConf2 libatk1.0_0 libdbus-glib_1_2 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libICE6 libintl8 libpango1.0_0 libSM6 libvte9 libX11_6
+requires: GConf2 libatk1.0_0 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libICE6 libintl8 libpango1.0_0 libSM6 libvte9 libX11_6
 sdesc: "GNOME terminal emulator"
 ldesc: "This is the GNOME terminal emulator application.  
 gnome-terminal is only the shell (menubar, prefs dialog); the terminal 
