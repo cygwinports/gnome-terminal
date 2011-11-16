@@ -4,4 +4,10 @@ DESCRIPTION="GNOME terminal emulator"
 
 PATCH_URI="mirror://portage/x11-terms/${PN}/files/${PN}-2.22.0-default_shell.patch"
 
+DEPEND="gnome-common gnome-doc-utils
+	pkgconfig(gconf-2.0)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(sm)
+	pkgconfig(vte-2.90)"
+
 CYGCONF_ARGS="--with-gtk=3.0"
