@@ -1,15 +1,13 @@
 inherit gnome2
 
 NAME="gnome-terminal"
-VERSION=3.6.2
+VERSION=3.8.4
 RELEASE=1
 CATEGORY="GNOME Shells"
 SUMMARY="GNOME terminal emulator"
 DESCRIPTION="This is the GNOME terminal emulator application. gnome-terminal
 is only the shell (menubar, prefs dialog); the terminal emulation ('stuff in
 the middle') comes from the VTE widget."
-
-PATCH_URI="mirror://portage/x11-terms/${PN}/files/${PN}-2.22.0-default_shell.patch"
 
 DEPEND="gnome-common gnome-doc-utils
 	pkgconfig(gconf-2.0)
