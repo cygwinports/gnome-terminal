@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-terminal"
-VERSION=3.8.4
+VERSION=3.10.2
 RELEASE=1
 CATEGORY="GNOME Shells"
 SUMMARY="GNOME terminal emulator"
@@ -15,4 +15,11 @@ DEPEND="gnome-common gnome-doc-utils
 	pkgconfig(sm)
 	pkgconfig(vte-2.90)"
 
-CYGCONF_ARGS="--with-gtk=3.0"
+CYGCONF_ARGS="--with-nautilus-extension"
+
+PKG_NAMES="${NAME} nautilus-open-terminal"
+gnome_terminal_CONTENTS="--exclude=nautilus etc/ usr/"
+nautilus_open_terminal_CATEGORY="GNOME"
+nautilus_open_terminal_SUMMARY="Open in Terminal plugin for Nautilus"
+nautilus_open_terminal_REQUIRES=${NAME}
+nautilus_open_terminal_CONTENTS="usr/lib/nautilus/"
