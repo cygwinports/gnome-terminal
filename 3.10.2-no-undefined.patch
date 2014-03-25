@@ -1,0 +1,11 @@
+--- origsrc/gnome-terminal-3.10.2/src/Makefile.am	2013-11-11 14:36:27.000000000 -0600
++++ src/gnome-terminal-3.10.2/src/Makefile.am	2014-03-24 15:21:19.653566400 -0500
+@@ -269,7 +269,7 @@ libterminal_nautilus_la_CFLAGS = \
+ 	$(AM_CFLAGS)
+ 
+ libterminal_nautilus_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	-export-symbols $(srcdir)/nautilus.symbols \
+ 	$(AM_LDFLAGS)
+ 

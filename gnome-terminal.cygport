@@ -9,6 +9,8 @@ DESCRIPTION="This is the GNOME terminal emulator application. gnome-terminal
 is only the shell (menubar, prefs dialog); the terminal emulation ('stuff in
 the middle') comes from the VTE widget."
 
+PATCH_URI="3.10.2-no-undefined.patch"
+
 DEPEND="gnome-common gnome-doc-utils
 	pkgconfig(gconf-2.0)
 	pkgconfig(gtk+-3.0)
