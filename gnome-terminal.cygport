@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-terminal"
-VERSION=3.22.2
+VERSION=3.24.2
 RELEASE=1
 CATEGORY="GNOME Shells"
 SUMMARY="GNOME terminal emulator"
@@ -15,7 +15,7 @@ DEPEND="gnome-common gnome-doc-utils
 	pkgconfig(gconf-2.0)
 	pkgconfig(gtk+-3.0)
 	pkgconfig(sm)
-	pkgconfig(vte-2.90)"
+	pkgconfig(vte-2.91)"
 
 CYGCONF_ARGS="--disable-search-provider --with-nautilus-extension"
 
